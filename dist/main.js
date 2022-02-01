@@ -10,23 +10,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contact\": () => (/* binding */ contact)\n/* harmony export */ });\nfunction contact(){\n    const content = document.querySelector('#content');\n    content.innerText = \"This is contact page content\";\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/contact.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"home\": () => (/* binding */ home)\n/* harmony export */ });\nfunction home() {\n    const content = document.querySelector('#content');\n    content.innerText = \"This is home page content\";\n}\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _render__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./render */ \"./src/render.js\");\nconsole.log(\"Welcome to my restaurant page!\");\n\n\n\n(0,_render__WEBPACK_IMPORTED_MODULE_0__.render)();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './style.css'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\n\n\nfunction header(){\n    const body = document.querySelector('body');\n\n    const header = document.createElement('header');\n\n    const h1 = document.createElement('h1');\n    h1.innerText = \"h1 inside the header\";\n\n    const nav = document.createElement('nav');\n\n    const homeBtn = document.createElement('button');\n    homeBtn.innerText = \"Home\";\n    homeBtn.addEventListener('click', _home__WEBPACK_IMPORTED_MODULE_0__.home);\n\n    const menuBtn = document.createElement('button');\n    menuBtn.innerText = \"Menu\";\n    menuBtn.addEventListener('click', _menu__WEBPACK_IMPORTED_MODULE_1__.menu);\n\n    const contactBtn = document.createElement('button');\n    contactBtn.innerText = \"Contact\";\n    contactBtn.addEventListener('click', _contact__WEBPACK_IMPORTED_MODULE_2__.contact);\n\n    nav.appendChild(homeBtn);\n    nav.appendChild(menuBtn);\n    nav.appendChild(contactBtn);\n\n    header.appendChild(h1);\n    header.appendChild(nav);\n\n    body.insertBefore(header, body.firstElementChild);\n    (0,_home__WEBPACK_IMPORTED_MODULE_0__.home)();\n}\nheader();\n\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/render.js":
-/*!***********************!*\
-  !*** ./src/render.js ***!
-  \***********************/
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* binding */ render)\n/* harmony export */ });\nfunction render() {\n    const content = document.querySelector('#content');\n\n    const header = document.createElement('header');\n    header.innerText = \"Welcome to my restaurant\";\n    content.appendChild(header);\n\n    const image = document.createElement('img');\n    image.src = '../src/image.jpg';\n    content.appendChild(image);\n\n    const para = document.createElement('p');\n    para.innerText = \"This cozy restaurant has left the best impressions! \" +\n        \"Hospitable hosts, delicious dishes, beautiful presentation, \" +\n        \"wide wine list and wonderful dessert. I recommend to everyone! I \" +\n        \"would like to come back here again and again.\";\n    content.appendChild(para);\n}\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/render.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menu\": () => (/* binding */ menu)\n/* harmony export */ });\nfunction menu(){\n    const content = document.querySelector('#content');\n    content.innerText = \"This is menu page content\";\n}\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
 
 /***/ })
 
